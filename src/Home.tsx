@@ -33,7 +33,7 @@ export default function Home() {
 		<main className='px-8 lg:px-0 mx-auto lg:text-center'>
 			<Section maxWidth='800px'>
 				<img
-					src='src/assets/images/lukaspodmelle.png'
+					src='/images/lukaspodmelle.png'
 					alt='Profilová fotka'
 					width={150}
 					className='inline-block mb-12'
@@ -144,7 +144,7 @@ export default function Home() {
 				</p>
 				<div className='sm:flex gap-6'>
 					<Card
-						image='src/assets/images/test.png'
+						image='/images/test.png'
 						alt='Obrázek nástroje Carousel Creator'
 						title='Carousel Creator'
 						text='Editor pro tvorbu jednoduchých cover obrázků'
@@ -153,7 +153,7 @@ export default function Home() {
 						github='https://github.com/lukaspodmelle/'
 					/>
 					<Card
-						image='src/assets/images/test.png'
+						image='/images/test.png'
 						alt='Obrázek nástroje Translation Manager'
 						title='Translation Manager'
 						text='Automatické překlady komunikace chatbotů a voicebotů'
@@ -177,7 +177,7 @@ export default function Home() {
 					pro tvorbu custom map k&nbsp;vytištění:
 				</p>
 				<Card
-					image='src/assets/images/test.png'
+					image='/images/test.png'
 					alt='Obrázek konceptu UI editoru'
 				/>
 			</Section>
