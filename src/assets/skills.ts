@@ -1,4 +1,4 @@
-export type Skill = {
+type Skill = {
 	title: string;
 	certified: boolean;
 };
@@ -12,4 +12,10 @@ export const skills: Skill[] = [
 	{ title: 'Next.js', certified: false },
 	{ title: 'Tailwind CSS', certified: false },
 	{ title: 'Figma', certified: false },
+	{ title: 'Photoshop', certified: false },
+	{ title: 'Illustrator', certified: false },
+	{ title: 'Premiere Pro', certified: false },
+	{ title: 'Blender', certified: false },
+	{ title: 'Git', certified: false },
+	{ title: 'GitHub', certified: false },
 ];
