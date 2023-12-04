@@ -11,7 +11,7 @@ type Section = {
 export default function Section({ children, maxWidth }: Section) {
 	return (
 		<section className='border-b border-slate-100'>
-			<div className='max-w-[960px] mx-auto py-32 border-x border-slate-100'>
+			<div className='max-w-[960px] mx-auto py-20 lg:py-32 border-x border-slate-100'>
 				<div className='mx-auto' style={{ maxWidth: maxWidth }}>
 					{children}
 				</div>

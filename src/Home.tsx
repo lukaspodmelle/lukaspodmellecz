@@ -30,7 +30,7 @@ import {
 
 export default function Home() {
 	return (
-		<main className='mx-auto text-center'>
+		<main className='px-8 lg:px-0 mx-auto lg:text-center'>
 			<Section maxWidth='800px'>
 				<img
 					src='src/assets/images/lukaspodmelle.png'
@@ -38,7 +38,7 @@ export default function Home() {
 					width={150}
 					className='inline-block mb-12'
 				/>
-				<p className='text-5xl mb-8'>
+				<p className='text-4xl lg:text-5xl mb-8'>
 					Ahoj, tady Lukáš!{' '}
 					<HandWaving weight='fill' className='inlineIcon' /> Design,
 					technologie, programování ={' '}
@@ -46,7 +46,7 @@ export default function Home() {
 					kam dřív skočit a&nbsp;co dalšího se naučit.{' '}
 					<RocketLaunch weight='fill' className='inlineIcon' />
 				</p>
-				<div className='flex gap-6 justify-center'>
+				<div className='flex flex-col lg:flex-row gap-6 justify-center'>
 					<Button
 						style='normal'
 						text='Více o mně'
@@ -71,7 +71,7 @@ export default function Home() {
 				<div id='muj-pribeh' className='mb-8'>
 					<Chip text='Co teď dělám' />
 				</div>
-				<p className='text-4xl'>
+				<p className='text-3xl lg:text-4xl'>
 					Head of Conversation Design a&nbsp;částečně Marketingový
 					specialista v&nbsp;Pardubickém Feedyou. Mám na starost
 					realizaci téměř veškerého marketingového obsahu.{' '}
@@ -93,7 +93,7 @@ export default function Home() {
 				<div className='mb-8'>
 					<Chip text='Proč vám píšu' />
 				</div>
-				<p className='text-4xl'>
+				<p className='text-3xl lg:text-4xl'>
 					Protože jsem postupem času zjistil, že programování mě baví
 					mnohem víc. <Code weight='fill' className='inlineIcon' />{' '}
 					Začal jsem stavbou webů na WordPressu, úpravami
@@ -107,7 +107,7 @@ export default function Home() {
 				<div className='mb-8'>
 					<Chip text='Co mohu nabídnout' />
 				</div>
-				<p className='text-4xl mb-12'>
+				<p className='text-3xl lg:text-4xl mb-12'>
 					<span className='text-primary'>HTML</span> a{' '}
 					<span className='text-primary'>CSS</span> mám zmáknuté
 					a&nbsp;na čem pracuji je{' '}
@@ -137,7 +137,7 @@ export default function Home() {
 				<div className='mb-8'>
 					<Chip text='Moje projekty' />
 				</div>
-				<p className='text-4xl mb-12'>
+				<p className='text-3xl lg:text-4xl mb-12'>
 					Pro svůj tým ve Feedyou jsem navrhl a&nbsp;vytvořil
 					nástroje, které s&nbsp;každým projektem usnadňují práci
 					a&nbsp;šetří cenný čas:
@@ -162,7 +162,7 @@ export default function Home() {
 						github='https://github.com/lukaspodmelle/'
 					/>
 				</div>
-				<p className='text-4xl mt-24 mb-12'>
+				<p className='text-3xl lg:text-4xl mt-24 mb-12'>
 					A&nbsp;také něco z&nbsp;hrníčku UI:{' '}
 					<Link
 						icon={<FigmaLogo />}
@@ -185,7 +185,7 @@ export default function Home() {
 				<div className='mb-8'>
 					<Chip text='Závěrem' />
 				</div>
-				<p className='text-4xl mb-12'>
+				<p className='text-3xl lg:text-4xl mb-12'>
 					Chtěl bych se podílet se na tvorbě skvělých webových
 					projektů, aplikací. Takových, které budou{' '}
 					<span className='text-primary'>dobře vypadat</span>, ale
