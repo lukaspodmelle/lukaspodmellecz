@@ -9,6 +9,7 @@ type Card = {
 	buttonLink?: string;
 	buttonText?: string;
 	github?: string;
+	onImageClick?: () => void;
 };
 /**
  *
@@ -19,6 +20,7 @@ type Card = {
  * @param buttonLink Primary button link
  * @param buttonText Primary button text
  * @param github Link to github
+ * @param onImageClick Function on image click
  * @returns Card component
  */
 export default function Card({
@@ -29,34 +31,41 @@ export default function Card({
 	buttonLink,
 	buttonText,
 	github,
+	onImageClick,
 }: Card) {
 	return (
 		<div className='flex flex-col w-full items-start gap-6 text-left'>
 			{image ? (
-				<img src={image} alt={alt} className='rounded-md w-full' />
+				<div className='rounded-md overflow-hidden w-full'>
+					<img
+						src={image}
+						alt={alt}
+						className='rounded-md w-full'
+						onClick={onImageClick}
+					/>
+				</div>
 			) : null}
+
 			<div className='max-w-[60%]'>
 				<h3 className='mb-2'>{title}</h3>
 				<p className='text-lg leading-tight'>{text}</p>
 			</div>
-			<div className='flex gap-2'>
+
+			<div className='flex gap-3'>
 				{buttonText ? (
 					<Button
-						style='normal'
+						variant='normal'
 						text={buttonText}
 						icon={<ArrowCircleUpRight weight='fill' size={20} />}
-						buttonOnClick={() => {
-							window.open(buttonLink, '_blank');
-						}}
+						link={buttonLink}
 					/>
 				) : null}
+
 				{github ? (
 					<Button
-						style='round'
+						variant='round'
 						icon={<GithubLogo weight='fill' size={20} />}
-						buttonOnClick={() => {
-							window.open(github, '_blank');
-						}}
+						link={github}
 					/>
 				) : null}
 			</div>

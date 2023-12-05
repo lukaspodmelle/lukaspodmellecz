@@ -10,7 +10,7 @@ type Chip = {
 export default function Chip({ text, color }: Chip) {
 	if (color === 'primary') {
 		return (
-			<div className='bg-primary text-white uppercase tracking-[.3rem] inline-block px-6 py-2 rounded-full'>
+			<div className='text-slate-500 sm:bg-primary sm:text-white uppercase tracking-[.3rem] inline-block px-6 py-2 rounded-full'>
 				<h2>{text}</h2>
 			</div>
 		);

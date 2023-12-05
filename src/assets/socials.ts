@@ -1,10 +1,10 @@
 import { LinkedinLogo, GithubLogo, InstagramLogo } from '@phosphor-icons/react';
 
-type Socials = {
+interface Socials {
 	title: string;
 	link: string;
 	icon: any;
-};
+}
 
 export const socials: Socials[] = [
 	{

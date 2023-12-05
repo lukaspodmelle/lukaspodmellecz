@@ -10,3 +10,4 @@ export { default as Tip } from './Tip';
 export { default as Arrow } from './Arrow';
 export { default as ScrollToTop } from './ScrollToTop';
 export { default as Socials } from './Socials';
+export { default as Spring } from './Spring';
