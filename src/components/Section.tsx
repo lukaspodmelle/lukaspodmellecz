@@ -5,15 +5,22 @@ type Section = {
 	children: React.ReactNode;
 	maxWidth?: string;
 	animation?: 'reveal';
+	type?: 'header';
 };
 /**
  *
  * @param children Children
  * @param animation Animation effect
  * @param maxWidth Max-width of inner div, e.g. "760px"
+ * @param type Is of type 'header'?
  * @returns Section component
  */
-export default function Section({ children, maxWidth, animation }: Section) {
+export default function Section({
+	children,
+	maxWidth,
+	animation,
+	type,
+}: Section) {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
 	const mainControls = useAnimation();
@@ -36,7 +43,10 @@ export default function Section({ children, maxWidth, animation }: Section) {
 				animate={mainControls}
 				transition={{ duration: 0.5 }}
 				className='border-b border-slate-100'>
-				<div className='max-w-[960px] mx-auto py-20 lg:py-32 border-x border-slate-100'>
+				<div
+					className={`${
+						type === 'header' ? 'py-8' : 'py-20'
+					} max-w-[960px] mx-auto lg:py-32 border-x border-slate-100`}>
 					<div className='mx-auto' style={{ maxWidth: maxWidth }}>
 						{children}
 					</div>
@@ -46,7 +56,10 @@ export default function Section({ children, maxWidth, animation }: Section) {
 	}
 	return (
 		<section className='border-b border-slate-100'>
-			<div className='max-w-[960px] mx-auto py-20 lg:py-32 border-x border-slate-100'>
+			<div
+				className={`${
+					type === 'header' ? 'py-8' : 'py-20'
+				} max-w-[960px] mx-auto lg:py-32 border-x border-slate-100`}>
 				<div className='mx-auto' style={{ maxWidth: maxWidth }}>
 					{children}
 				</div>
