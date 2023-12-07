@@ -51,7 +51,7 @@ export default function Card({
 				<p className='text-lg leading-tight'>{text}</p>
 			</div>
 
-			<div className='flex flex-col sm:flex-row gap-3'>
+			<div className='flex gap-3'>
 				{buttonText ? (
 					<Button
 						variant='normal'
