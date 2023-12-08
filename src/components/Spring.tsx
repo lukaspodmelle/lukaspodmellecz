@@ -4,7 +4,12 @@ type Spring = {
 	children: React.ReactNode;
 	scaleTo: number;
 };
-
+/**
+ *
+ * @param children Animated component
+ * @param scaleTo Number to scale to on transition
+ * @returns Animation
+ */
 export default function Spring({ children, scaleTo }: Spring) {
 	return (
 		<motion.div

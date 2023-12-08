@@ -13,15 +13,15 @@ import {
 export default function Header() {
 	return (
 		<Section maxWidth='800px' type='header'>
-			<motion.img
+			{/* <motion.img
 				initial={{ y: -20, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				src='/images/lukaspodmelle.png'
 				alt='Profilová fotka'
 				className='inline-block mb-12 w-32'
-			/>
+			/> */}
 			<motion.p
-				initial={{ y: -20, opacity: 0 }}
+				initial={{ y: -30, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ delay: 0.2 }}
 				className='text-4xl lg:text-5xl mb-8'>
@@ -33,7 +33,7 @@ export default function Header() {
 				<RocketLaunch weight='fill' className='inlineIcon' />
 			</motion.p>
 			<motion.div
-				initial={{ y: -20, opacity: 0 }}
+				initial={{ y: -30, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ delay: 0.4 }}
 				className='flex flex-col lg:flex-row gap-6 justify-center'>

@@ -10,6 +10,7 @@ type Skill = {
  *
  * @param text Skill text
  * @param isCertified Is skill certified? Accepts boolean.
+ * @param certificateLink Link to certificate
  * @returns Skill component
  */
 export default function Skill({ text, isCertified, certificateLink }: Skill) {
