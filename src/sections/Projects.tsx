@@ -8,9 +8,8 @@ export default function Projects() {
 				<Chip text='Moje projekty' />
 			</div>
 			<p className='text-3xl lg:text-4xl mb-12'>
-				Pro svůj tým ve Feedyou jsem navrhl a&nbsp;vytvořil nástroje,
-				které s&nbsp;každým projektem usnadňují práci a&nbsp;šetří cenný
-				čas:
+				Pro svůj tým ve Feedyou jsem vytvořil nástroje, které
+				s&nbsp;každým projektem usnadňují práci a&nbsp;šetří čas:
 			</p>
 			<div className='flex flex-col md:flex-row gap-12 md:gap-6'>
 				<Card

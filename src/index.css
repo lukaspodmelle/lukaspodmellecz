@@ -5,7 +5,7 @@
 
 @layer base {
 	body {
-		@apply text-slate-800 font-medium;
+		@apply text-slate-800 tracking-wide font-medium;
 	}
 	h3 {
 		@apply font-bold text-xl;

@@ -6,6 +6,7 @@ import {
 	Heart,
 	RocketLaunch,
 	ArrowDown,
+	ArrowCircleDown,
 	LinkedinLogo,
 	GithubLogo,
 } from '@phosphor-icons/react';
@@ -13,18 +14,19 @@ import {
 export default function Header() {
 	return (
 		<Section maxWidth='800px' type='header'>
-			{/* <motion.img
+			<motion.img
 				initial={{ y: -20, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				src='/images/lukaspodmelle.png'
 				alt='Profilová fotka'
 				className='inline-block mb-12 w-32'
-			/> */}
+				loading='lazy'
+			/>
 			<motion.p
 				initial={{ y: -30, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ delay: 0.2 }}
-				className='text-4xl lg:text-5xl mb-8'>
+				className='text-4xl lg:text-5xl mb-8 font-medium'>
 				Ahoj, tady Lukáš!{' '}
 				<HandWaving weight='fill' className='inlineIcon' /> Design,
 				technologie, programování ={' '}
@@ -40,7 +42,7 @@ export default function Header() {
 				<Button
 					variant='normal'
 					text='Více o mně'
-					icon={<ArrowDown />}
+					icon={<ArrowCircleDown weight='fill' size={20} />}
 					buttonOnClick={() => scrollToContent('muj-pribeh')}
 				/>
 				<div className='flex gap-2 text-slate-800'>

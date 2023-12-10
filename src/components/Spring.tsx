@@ -18,7 +18,8 @@ export default function Spring({ children, scaleTo }: Spring) {
 				type: 'spring',
 				stiffness: 350,
 				damping: 15,
-			}}>
+			}}
+			className='max-w-fit'>
 			{children}
 		</motion.div>
 	);

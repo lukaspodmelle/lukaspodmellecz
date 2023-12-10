@@ -29,9 +29,9 @@ export default function Button({
 	if (variant === 'normal') {
 		return (
 			<Spring scaleTo={1.05}>
-				<a href={link} target='_blank'>
+				<a href={link} target='_blank' className='max-w-fit'>
 					<button
-						className={`bg-primary text-white flex justify-center items-center gap-3 px-8 py-3 rounded-full ${style}`}
+						className={`bg-primary text-white font-medium flex justify-center items-center gap-3 px-8 py-3 rounded-full ${style}`}
 						onClick={buttonOnClick}>
 						{text}
 						{icon}

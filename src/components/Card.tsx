@@ -42,6 +42,7 @@ export default function Card({
 						alt={alt}
 						className='rounded-[2px] w-ful'
 						onClick={onImageClick}
+						loading='lazy'
 					/>
 				</div>
 			) : null}

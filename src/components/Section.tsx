@@ -41,7 +41,7 @@ export default function Section({
 				}}
 				initial='hidden'
 				animate={mainControls}
-				transition={{ duration: 0.5 }}
+				transition={{ duration: 0.5, delay: 0.4 }}
 				className='border-b border-slate-100'>
 				<div
 					className={`${
