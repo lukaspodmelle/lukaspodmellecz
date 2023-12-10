@@ -8,8 +8,8 @@ export default function Epilogue() {
 				<Chip text='Závěrem' />
 			</div>
 			<p className='text-3xl lg:text-4xl'>
-				Chtěl bych se podílet se na tvorbě skvělých webových projektů,
-				aplikací. Takových, které budou{' '}
+				Chtěl bych se podílet na tvorbě skvělých webových projektů
+				a&nbsp;aplikací. Takových, které budou{' '}
 				<span className='text-primary'>dobře vypadat</span>, ale také{' '}
 				<span className='text-primary'>bezchybně fungovat</span>.{' '}
 				<Lightning weight='fill' className='inlineIcon' /> Teď za sebou
