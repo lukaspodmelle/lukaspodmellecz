@@ -19,7 +19,12 @@ export const skills: Skill[] = [
 		certificateLink:
 			'https://www.codecademy.com/profiles/lukaspodmelle/certificates/56fb1e71303e37b643bb1905f31c8a09',
 	},
-	{ title: 'React', isCertified: false },
+	{
+		title: 'React',
+		isCertified: true,
+		certificateLink:
+			'https://www.codecademy.com/profiles/lukaspodmelle/certificates/af00e5032d0a68cc84879983f5d8333b',
+	},
 	{ title: 'Next.js', isCertified: false },
 	{ title: 'Tailwind CSS', isCertified: false },
 	{ title: 'Figma', isCertified: false },

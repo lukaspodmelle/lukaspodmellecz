@@ -9,7 +9,7 @@ export default function Footer() {
 					className='underline underline-offset-4 decoration-1'
 					href='https://github.com/lukaspodmelle/lukaspodmellecz'
 					target='_blank'>
-					kód tohoto webu
+					kód&nbsp;tohoto webu
 				</a>
 			</p>
 			<GithubLogo weight='fill' />

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-export default function Arrow(): React.ReactNode {
+export default function Arrow() {
 	return (
 		<motion.div
 			initial={{ y: 0 }}

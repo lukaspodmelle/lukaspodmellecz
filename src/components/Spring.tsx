@@ -4,7 +4,12 @@ type Spring = {
 	children: React.ReactNode;
 	scaleTo: number;
 };
-
+/**
+ *
+ * @param children Animated component
+ * @param scaleTo Number to scale to on transition
+ * @returns Animation
+ */
 export default function Spring({ children, scaleTo }: Spring) {
 	return (
 		<motion.div
@@ -13,7 +18,8 @@ export default function Spring({ children, scaleTo }: Spring) {
 				type: 'spring',
 				stiffness: 350,
 				damping: 15,
-			}}>
+			}}
+			className='max-w-fit'>
 			{children}
 		</motion.div>
 	);

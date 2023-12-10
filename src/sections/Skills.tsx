@@ -14,13 +14,13 @@ export default function Skills() {
 				<span className='text-primary'>TypeScript</span>,{' '}
 				<span className='text-primary'>React</span> a{' '}
 				<span className='text-primary'>Next.js</span>. Na psaní CSS jsem
-				si zamiloval <span className='text-primary'>Tailwind</span>,
-				taky jsem si vyzkoušel práci s&nbsp;headless CMS, třeba{' '}
+				si oblíbil <span className='text-primary'>Tailwind</span>.{' '}
+				Vyzkoušel jsem si také práci s&nbsp;headless CMS, například{' '}
 				<span className='text-primary'>Sanity</span>,{' '}
 				<span className='text-primary'>Strapi</span> nebo{' '}
 				<span className='text-primary'>Prismic</span>.
 			</p>
-			<div className='flex flex-wrap lg:justify-center gap-2'>
+			<div className='flex flex-wrap lg:justify-center gap-3'>
 				{skills.map((skill, index) => (
 					<Skill
 						text={skill.title}
