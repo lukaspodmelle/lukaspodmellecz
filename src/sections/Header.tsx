@@ -5,7 +5,6 @@ import {
 	HandWaving,
 	Heart,
 	RocketLaunch,
-	ArrowDown,
 	ArrowCircleDown,
 	LinkedinLogo,
 	GithubLogo,
