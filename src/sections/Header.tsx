@@ -3,16 +3,17 @@ import { scrollToContent } from '../utils/scrollToContent';
 import { Section, Button } from '../components';
 import {
 	HandWaving,
-	Heart,
-	RocketLaunch,
 	ArrowCircleDown,
 	LinkedinLogo,
 	GithubLogo,
+	Code,
+	Download,
+	FileArrowDown,
 } from '@phosphor-icons/react';
 
 export default function Header() {
 	return (
-		<Section maxWidth='800px' type='header'>
+		<Section maxWidth='790px' type='header'>
 			<motion.img
 				initial={{ y: -20, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
@@ -25,13 +26,11 @@ export default function Header() {
 				initial={{ y: -30, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ delay: 0.2 }}
-				className='text-4xl lg:text-5xl mb-8 font-medium'>
+				className='text-4xl lg:text-6xl mb-8 font-medium'>
 				Ahoj, tady Lukáš!{' '}
-				<HandWaving weight='fill' className='inlineIcon' /> Design,
-				technologie, programování ={' '}
-				<Heart weight='fill' className='inlineIcon' /> Občas nevím, kam
-				dřív skočit a&nbsp;co dalšího se naučit.{' '}
-				<RocketLaunch weight='fill' className='inlineIcon' />
+				<HandWaving weight='fill' className='inlineIcon' /> Junior
+				front-end developer, co hledá práci.{' '}
+				<Code weight='fill' className='inlineIcon' />
 			</motion.p>
 			<motion.div
 				initial={{ y: -30, opacity: 0 }}
@@ -45,6 +44,12 @@ export default function Header() {
 					buttonOnClick={() => scrollToContent('muj-pribeh')}
 				/>
 				<div className='flex gap-2 text-slate-800'>
+					<Button
+						variant='secondary'
+						text='CV'
+						icon={<FileArrowDown weight='fill' size={20} />}
+						buttonOnClick={() => scrollToContent('muj-pribeh')}
+					/>
 					<Button
 						variant='round'
 						icon={<LinkedinLogo size={20} weight='fill' />}
