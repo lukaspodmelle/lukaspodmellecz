@@ -16,7 +16,7 @@ export default function Projects() {
 			</p>
 			<div className='flex flex-col md:flex-row gap-12 md:gap-6'>
 				<Card
-					image='/images/carousel-creator-3.png'
+					image='/images/carousel-creator-new.png'
 					alt='Obrázek nástroje Carousel Creator'
 					title='Carousel Creator'
 					text='Editor pro tvorbu jednoduchých cover obrázků'
@@ -25,7 +25,7 @@ export default function Projects() {
 					github='https://github.com/lukaspodmelle/feedyou-bot-tools'
 				/>
 				<Card
-					image='/images/translation-manager-3.png'
+					image='/images/translation-manager-new.png'
 					alt='Obrázek nástroje Translation Manager'
 					title='Translation Manager'
 					text='Automatické překlady komunikace chatbotů a&nbsp;voicebotů'
@@ -40,7 +40,8 @@ export default function Projects() {
 					icon={<FigmaLogo />}
 					link={
 						'https://www.figma.com/file/3tpfCV2ukv1hNIl4ElE4vq/Tvoje-mapa-(Concept-UI)?type=design&node-id=0%3A1&mode=design&t=fzMjoTnPdHMWoV2V-1'
-					}>
+					}
+				>
 					Koncept editoru
 				</Link>{' '}
 				pro tvorbu custom map k&nbsp;vytištění:

@@ -36,7 +36,7 @@ export default function Card({
 	return (
 		<div className='flex flex-col w-full items-start gap-6 text-left'>
 			{image ? (
-				<div className='overflow-hidden w-full border-4 border-slate-100 rounded-md bg-slate-100 '>
+				<div className='overflow-hidden w-full border-0 border-slate-100 rounded-md bg-slate-100 '>
 					<img
 						src={image}
 						alt={alt}
