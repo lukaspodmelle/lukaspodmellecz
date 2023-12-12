@@ -5,9 +5,7 @@ import {
 	HandWaving,
 	ArrowCircleDown,
 	LinkedinLogo,
-	GithubLogo,
-	Code,
-	Download,
+	RocketLaunch,
 	FileArrowDown,
 } from '@phosphor-icons/react';
 
@@ -26,11 +24,11 @@ export default function Header() {
 				initial={{ y: -30, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ delay: 0.2 }}
-				className='text-4xl lg:text-6xl mb-8 font-medium'>
+				className='text-4xl lg:text-6xl mb-8 font-medium text-slate-800'>
 				Ahoj, tady Lukáš!{' '}
 				<HandWaving weight='fill' className='inlineIcon' /> Junior
 				front-end developer, co hledá práci.{' '}
-				<Code weight='fill' className='inlineIcon' />
+				<RocketLaunch weight='fill' className='inlineIcon' />
 			</motion.p>
 			<motion.div
 				initial={{ y: -30, opacity: 0 }}
@@ -54,11 +52,6 @@ export default function Header() {
 						variant='round'
 						icon={<LinkedinLogo size={20} weight='fill' />}
 						link={'https://www.linkedin.com/in/lukaspodmelle/'}
-					/>
-					<Button
-						variant='round'
-						icon={<GithubLogo size={20} weight='fill' />}
-						link={'https://github.com/lukaspodmelle/'}
 					/>
 				</div>
 			</motion.div>

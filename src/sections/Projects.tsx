@@ -9,7 +9,10 @@ export default function Projects() {
 			</div>
 			<p className='text-3xl lg:text-4xl mb-12'>
 				Pro svůj tým ve Feedyou jsem vytvořil nástroje, které
-				s&nbsp;každým projektem usnadňují práci a&nbsp;šetří čas:
+				s&nbsp;každým projektem{' '}
+				<span className='highlight'>
+					usnadňují práci a&nbsp;šetří čas:
+				</span>
 			</p>
 			<div className='flex flex-col md:flex-row gap-12 md:gap-6'>
 				<Card
@@ -25,7 +28,7 @@ export default function Projects() {
 					image='/images/translation-manager-3.png'
 					alt='Obrázek nástroje Translation Manager'
 					title='Translation Manager'
-					text='Automatické překlady komunikace chatbotů a voicebotů'
+					text='Automatické překlady komunikace chatbotů a&nbsp;voicebotů'
 					buttonText='Vyzkoušejte'
 					buttonLink='https://tools.feedyou.ai/translation-manager#demo'
 					github='https://github.com/lukaspodmelle/feedyou-bot-tools'

@@ -1,5 +1,9 @@
 import { Section, Chip, Button } from '../components';
-import { Chats, Sunglasses, ArrowCircleUpRight } from '@phosphor-icons/react';
+import {
+	ArrowCircleUpRight,
+	ChatsCircle,
+	HandHeart,
+} from '@phosphor-icons/react';
 
 export default function CurrentWork() {
 	return (
@@ -8,17 +12,16 @@ export default function CurrentWork() {
 				<Chip text='Co teď dělám' />
 			</div>
 			<p className='text-3xl lg:text-4xl'>
-				Head of Conversation Design a&nbsp;částečně Marketingový
-				specialista v&nbsp;Pardubickém Feedyou.{' '}
-				<Chats weight='fill' className='inlineIcon' /> Mám na starost
-				realizaci téměř veškerého obsahu.{' '}
-				<span className='text-primary'>Web</span>,{' '}
-				<span className='text-primary'>sociální sítě</span> nebo{' '}
-				<span className='text-primary'>newslettery</span>. Implementoval
-				jsem novou{' '}
-				<span className='text-primary'>vizuální identitu</span>{' '}
-				a&nbsp;dál se o&nbsp;ni starám.{' '}
-				<Sunglasses weight='fill' className='inlineIcon' />
+				Jsem Head of Conversation Design a&nbsp;Marketingový specialista
+				ve&nbsp;Feedyou.{' '}
+				<ChatsCircle weight='fill' className='inlineIcon' />{' '}
+				<span className='highlight'>
+					Tvořím téměř veškerý obsah pro web, sociální sítě nebo{' '}
+					newslettery.{' '}
+				</span>{' '}
+				Implementoval jsem novou vizuální identitu a&nbsp;dál se
+				o&nbsp;ni starám.{' '}
+				<HandHeart weight='fill' className='inlineIcon' />
 			</p>
 
 			<div className='grid sm:grid-cols-3 gap-5 my-8'>

@@ -5,17 +5,29 @@ type Skill = {
 	text: string;
 	isCertified?: boolean;
 	certificateLink?: string;
+	isHighlighted?: boolean;
 };
 /**
  *
  * @param text Skill text
  * @param isCertified Is skill certified? Accepts boolean.
+ * @param isHighlighted Is skill highlighted? Accepts boolean.
  * @param certificateLink Link to certificate
  * @returns Skill component
  */
-export default function Skill({ text, isCertified, certificateLink }: Skill) {
+export default function Skill({
+	text,
+	isCertified,
+	isHighlighted,
+	certificateLink,
+}: Skill) {
 	return (
-		<div className='sm:text-xl border border-slate-200 inline-block px-8 py-3 rounded-full font-medium relative'>
+		<div
+			className={`${
+				isHighlighted
+					? 'font-bold text-slate-800'
+					: 'font-medium text-slate-600'
+			} sm:text-xl border border-slate-200 inline-block px-8 py-3 rounded-full relative`}>
 			{text}
 			{isCertified && (
 				<motion.a
