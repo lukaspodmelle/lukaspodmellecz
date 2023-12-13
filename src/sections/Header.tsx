@@ -24,7 +24,7 @@ export default function Header() {
 				initial={{ y: -30, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ delay: 0.2 }}
-				className='text-4xl lg:text-6xl mb-8 font-medium text-slate-800'>
+				className='text-4xl lg:text-6xl mb-12 font-medium text-slate-800'>
 				Ahoj, tady Lukáš!{' '}
 				<HandWaving weight='fill' className='inlineIcon' /> Junior
 				front-end developer, co hledá práci.{' '}

@@ -3,7 +3,7 @@ import { FigmaLogo } from '@phosphor-icons/react';
 
 export default function Projects() {
 	return (
-		<Section>
+		<Section animation='reveal'>
 			<div className='mb-8'>
 				<Chip text='Moje projekty' />
 			</div>
@@ -40,14 +40,13 @@ export default function Projects() {
 					icon={<FigmaLogo />}
 					link={
 						'https://www.figma.com/file/3tpfCV2ukv1hNIl4ElE4vq/Tvoje-mapa-(Concept-UI)?type=design&node-id=0%3A1&mode=design&t=fzMjoTnPdHMWoV2V-1'
-					}
-				>
+					}>
 					Koncept editoru
 				</Link>{' '}
 				pro tvorbu custom map k&nbsp;vytištění:
 			</p>
 			<Card
-				image='/images/tvoje-mapa-2.png'
+				image='/images/tvoje-mapa.png'
 				alt='Obrázek konceptu UI editoru'
 			/>
 		</Section>

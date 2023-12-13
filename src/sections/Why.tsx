@@ -3,7 +3,7 @@ import { RocketLaunch, Fire } from '@phosphor-icons/react';
 
 export default function Why() {
 	return (
-		<Section>
+		<Section animation='reveal'>
 			<div className='mb-8'>
 				<Chip text='Proč vám píšu' />
 			</div>

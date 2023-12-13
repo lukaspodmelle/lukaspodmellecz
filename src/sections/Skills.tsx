@@ -3,7 +3,7 @@ import { skills } from '../assets/skills';
 
 export default function Skills() {
 	return (
-		<Section>
+		<Section animation='reveal'>
 			<div className='mb-8'>
 				<Chip text='Skills' />
 			</div>
