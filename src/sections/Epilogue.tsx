@@ -18,7 +18,7 @@ export default function Epilogue() {
 				Teď za sebou sice moc zkušeností z&nbsp;vývoje nemám, ale
 				přináším <span className='highlight'>přesah do designu</span>,
 				maximální zápal pro věc a&nbsp;hlavně{' '}
-				<span className='highlight'>chuť se stále učit</span>.{' '}
+				<span className='highlight'>chuť se učit</span>.{' '}
 				<BookOpen weight='fill' className='inlineIcon' />
 			</p>
 		</Section>

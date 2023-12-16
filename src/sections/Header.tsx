@@ -24,17 +24,19 @@ export default function Header() {
 				initial={{ y: -30, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ delay: 0.2 }}
-				className='text-4xl lg:text-6xl mb-12 font-medium text-slate-800'>
+				className='text-4xl lg:text-6xl mb-12 font-medium text-slate-800'
+			>
 				Ahoj, tady Lukáš!{' '}
 				<HandWaving weight='fill' className='inlineIcon' /> Junior
-				front-end developer, co hledá práci.{' '}
+				front-end developer, co shání práci.{' '}
 				<RocketLaunch weight='fill' className='inlineIcon' />
 			</motion.p>
 			<motion.div
 				initial={{ y: -30, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ delay: 0.4 }}
-				className='flex flex-col lg:flex-row gap-6 justify-center'>
+				className='flex flex-col lg:flex-row gap-6 justify-center'
+			>
 				<Button
 					variant='normal'
 					text='Více o mně'
@@ -46,7 +48,7 @@ export default function Header() {
 						variant='secondary'
 						text='CV'
 						icon={<FileArrowDown weight='fill' size={20} />}
-						buttonOnClick={() => scrollToContent('muj-pribeh')}
+						link='/lukas-podmelle-cv.pdf'
 					/>
 					<Button
 						variant='round'

@@ -28,19 +28,20 @@ export default function Projects() {
 					image='/images/translation-manager-new.png'
 					alt='Obrázek nástroje Translation Manager'
 					title='Translation Manager'
-					text='Automatické překlady komunikace chatbotů a&nbsp;voicebotů'
+					text='Automatické překlady chatbotů a&nbsp;voicebotů'
 					buttonText='Vyzkoušejte'
 					buttonLink='https://tools.feedyou.ai/translation-manager#demo'
 					github='https://github.com/lukaspodmelle/feedyou-bot-tools'
 				/>
 			</div>
 			<p className='text-3xl lg:text-4xl mt-24 mb-12'>
-				A&nbsp;také něco z&nbsp;hrníčku UI:{' '}
+				A&nbsp;také něco z&nbsp;oblasti UI:{' '}
 				<Link
 					icon={<FigmaLogo />}
 					link={
 						'https://www.figma.com/file/3tpfCV2ukv1hNIl4ElE4vq/Tvoje-mapa-(Concept-UI)?type=design&node-id=0%3A1&mode=design&t=fzMjoTnPdHMWoV2V-1'
-					}>
+					}
+				>
 					Koncept editoru
 				</Link>{' '}
 				pro tvorbu custom map k&nbsp;vytištění:

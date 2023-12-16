@@ -2,7 +2,7 @@ import { Section, Chip, Button } from '../components';
 import {
 	ArrowCircleUpRight,
 	ChatsCircle,
-	HandHeart,
+	Briefcase,
 } from '@phosphor-icons/react';
 
 export default function CurrentWork() {
@@ -12,16 +12,17 @@ export default function CurrentWork() {
 				<Chip text='Co teď dělám' />
 			</div>
 			<p className='text-3xl lg:text-4xl'>
-				Jsem Head of Conversation Design a&nbsp;Marketingový specialista
+				Head of Conversation Design a&nbsp;Marketing Specialist
 				ve&nbsp;Feedyou.{' '}
+				<Briefcase weight='fill' className='inlineIcon' />{' '}
+				<span className='highlight'>
+					Vedu tým konverzačních designerů
+				</span>{' '}
+				zodpovědných za tvorbu chatbotů a&nbsp;voicebotů.{' '}
 				<ChatsCircle weight='fill' className='inlineIcon' />{' '}
 				<span className='highlight'>
-					Tvořím téměř veškerý obsah pro web, sociální sítě nebo{' '}
-					newslettery.{' '}
+					Tvořím obsah pro web, sociální sítě nebo newslettery.{' '}
 				</span>{' '}
-				Implementoval jsem novou vizuální identitu a&nbsp;dál se
-				o&nbsp;ni starám.{' '}
-				<HandHeart weight='fill' className='inlineIcon' />
 			</p>
 
 			<div className='grid sm:grid-cols-3 gap-5 my-8'>

@@ -10,11 +10,12 @@ export default function Skills() {
 			<p className='text-3xl lg:text-4xl mb-12'>
 				Zaměřuji se na{' '}
 				<span className='highlight'>
-					JavaScript, TypeScript, React a Next.js.
+					JavaScript, TypeScript, React a&nbsp;Next.js.
 				</span>{' '}
 				Na psaní CSS jsem si oblíbil Tailwind. Vyzkoušel jsem také
 				headless CMS, například{' '}
-				<span className='highlight'>Sanity, Strapi nebo Prismic.</span>
+				<span className='highlight'>Sanity, Strapi</span> nebo{' '}
+				<span className='highlight'>Prismic.</span>
 			</p>
 			<div className='flex flex-wrap lg:justify-center gap-3'>
 				{skills.map((skill, index) => (
