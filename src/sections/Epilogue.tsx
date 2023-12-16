@@ -1,24 +1,25 @@
 import { Section, Chip } from '../components';
-import { Lightning, BookOpen, SmileyWink } from '@phosphor-icons/react';
+import { Lightning, BookOpen } from '@phosphor-icons/react';
 
 export default function Epilogue() {
 	return (
-		<Section>
+		<Section animation='reveal'>
 			<div className='mb-8'>
 				<Chip text='Závěrem' />
 			</div>
+			<p className='text-3xl lg:text-4xl mb-10'>
+				Chtěl bych se podílet na tvorbě webových projektů, které budou{' '}
+				<span className='highlight'>
+					dobře vypadat, ale také bezchybně fungovat.{' '}
+					<Lightning weight='fill' className='inlineIcon' />
+				</span>
+			</p>
 			<p className='text-3xl lg:text-4xl'>
-				Chtěl bych se podílet na tvorbě skvělých webových projektů
-				a&nbsp;aplikací. Takových, které budou{' '}
-				<span className='text-primary'>dobře vypadat</span>, ale také{' '}
-				<span className='text-primary'>bezchybně fungovat</span>.{' '}
-				<Lightning weight='fill' className='inlineIcon' /> Teď za sebou
-				sice moc zkušeností z&nbsp;vývoje nemám, ale přináším{' '}
-				<span className='text-primary'>přesah do designu</span>,
+				Teď za sebou sice moc zkušeností z&nbsp;vývoje nemám, ale
+				přináším <span className='highlight'>přesah do designu</span>,
 				maximální zápal pro věc a&nbsp;hlavně{' '}
-				<span className='text-primary'>chuť se stále učit</span>.{' '}
-				<BookOpen weight='fill' className='inlineIcon' /> Mohli bychom
-				si rozumět? <SmileyWink weight='fill' className='inlineIcon' />
+				<span className='highlight'>chuť se učit</span>.{' '}
+				<BookOpen weight='fill' className='inlineIcon' />
 			</p>
 		</Section>
 	);

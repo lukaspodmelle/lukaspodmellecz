@@ -1,20 +1,19 @@
 import { Section, Chip } from '../components';
-import { ThumbsDown, Fire, Code } from '@phosphor-icons/react';
+import { RocketLaunch, Fire } from '@phosphor-icons/react';
 
 export default function Why() {
 	return (
-		<Section>
+		<Section animation='reveal'>
 			<div className='mb-8'>
 				<Chip text='Proč vám píšu' />
 			</div>
 			<p className='text-3xl lg:text-4xl'>
-				Protože jsem se postupem času našel více v programování
-				a&nbsp;hledám nový začátek.{' '}
-				<Code weight='fill' className='inlineIcon' /> Začal jsem stavbou
-				webů na WordPressu, úpravami a&nbsp;tvorbou šablon, ale to mě
-				moc nechytlo.{' '}
-				<ThumbsDown weight='fill' className='inlineIcon' /> Naopak jsem
-				se zamiloval do Reactu a&nbsp;svobody při navrhování.{' '}
+				Postupně jsem se našel více v&nbsp;programování a&nbsp;
+				<span className='highlight'>hledám nový začátek.</span>{' '}
+				<RocketLaunch weight='fill' className='inlineIcon' /> Začínal
+				jsem na WordPressu a&nbsp;nakonec jsem se{' '}
+				<span className='highlight'>zamiloval do Reactu</span>{' '}
+				a&nbsp;svobody při navrhování.{' '}
 				<Fire weight='fill' className='inlineIcon' />
 			</p>
 		</Section>

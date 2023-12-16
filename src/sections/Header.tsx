@@ -3,16 +3,15 @@ import { scrollToContent } from '../utils/scrollToContent';
 import { Section, Button } from '../components';
 import {
 	HandWaving,
-	Heart,
-	RocketLaunch,
 	ArrowCircleDown,
 	LinkedinLogo,
-	GithubLogo,
+	RocketLaunch,
+	FileArrowDown,
 } from '@phosphor-icons/react';
 
 export default function Header() {
 	return (
-		<Section maxWidth='800px' type='header'>
+		<Section maxWidth='790px' type='header'>
 			<motion.img
 				initial={{ y: -20, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
@@ -25,19 +24,19 @@ export default function Header() {
 				initial={{ y: -30, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ delay: 0.2 }}
-				className='text-4xl lg:text-5xl mb-8 font-medium'>
+				className='text-4xl lg:text-6xl mb-12 font-medium text-slate-800'
+			>
 				Ahoj, tady Lukáš!{' '}
-				<HandWaving weight='fill' className='inlineIcon' /> Design,
-				technologie, programování ={' '}
-				<Heart weight='fill' className='inlineIcon' /> Občas nevím, kam
-				dřív skočit a&nbsp;co dalšího se naučit.{' '}
+				<HandWaving weight='fill' className='inlineIcon' /> Junior
+				front-end developer, co shání práci.{' '}
 				<RocketLaunch weight='fill' className='inlineIcon' />
 			</motion.p>
 			<motion.div
 				initial={{ y: -30, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ delay: 0.4 }}
-				className='flex flex-col lg:flex-row gap-6 justify-center'>
+				className='flex flex-col lg:flex-row gap-6 justify-center'
+			>
 				<Button
 					variant='normal'
 					text='Více o mně'
@@ -46,14 +45,15 @@ export default function Header() {
 				/>
 				<div className='flex gap-2 text-slate-800'>
 					<Button
-						variant='round'
-						icon={<LinkedinLogo size={20} weight='fill' />}
-						link={'https://www.linkedin.com/in/lukaspodmelle/'}
+						variant='secondary'
+						text='CV'
+						icon={<FileArrowDown weight='fill' size={20} />}
+						link='/lukas-podmelle-cv.pdf'
 					/>
 					<Button
 						variant='round'
-						icon={<GithubLogo size={20} weight='fill' />}
-						link={'https://github.com/lukaspodmelle/'}
+						icon={<LinkedinLogo size={20} weight='fill' />}
+						link={'https://www.linkedin.com/in/lukaspodmelle/'}
 					/>
 				</div>
 			</motion.div>

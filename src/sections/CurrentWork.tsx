@@ -1,5 +1,9 @@
 import { Section, Chip, Button } from '../components';
-import { Chats, Sunglasses, ArrowCircleUpRight } from '@phosphor-icons/react';
+import {
+	ArrowCircleUpRight,
+	ChatsCircle,
+	Briefcase,
+} from '@phosphor-icons/react';
 
 export default function CurrentWork() {
 	return (
@@ -8,17 +12,17 @@ export default function CurrentWork() {
 				<Chip text='Co teď dělám' />
 			</div>
 			<p className='text-3xl lg:text-4xl'>
-				Head of Conversation Design a&nbsp;částečně Marketingový
-				specialista v&nbsp;Pardubickém Feedyou.{' '}
-				<Chats weight='fill' className='inlineIcon' /> Mám na starost
-				realizaci téměř veškerého obsahu.{' '}
-				<span className='text-primary'>Web</span>,{' '}
-				<span className='text-primary'>sociální sítě</span> nebo{' '}
-				<span className='text-primary'>newslettery</span>. Implementoval
-				jsem novou{' '}
-				<span className='text-primary'>vizuální identitu</span>{' '}
-				a&nbsp;dál se o&nbsp;ni starám.{' '}
-				<Sunglasses weight='fill' className='inlineIcon' />
+				Head of Conversation Design a&nbsp;Marketing Specialist
+				ve&nbsp;Feedyou.{' '}
+				<Briefcase weight='fill' className='inlineIcon' />{' '}
+				<span className='highlight'>
+					Vedu tým konverzačních designerů
+				</span>{' '}
+				zodpovědných za tvorbu chatbotů a&nbsp;voicebotů.{' '}
+				<ChatsCircle weight='fill' className='inlineIcon' />{' '}
+				<span className='highlight'>
+					Tvořím obsah pro web, sociální sítě nebo newslettery.{' '}
+				</span>{' '}
 			</p>
 
 			<div className='grid sm:grid-cols-3 gap-5 my-8'>

@@ -36,20 +36,24 @@ export default function Card({
 	return (
 		<div className='flex flex-col w-full items-start gap-6 text-left'>
 			{image ? (
-				<div className='overflow-hidden w-full border-4 border-slate-100 rounded-md bg-slate-100'>
-					<img
-						src={image}
-						alt={alt}
-						className='rounded-[2px] w-ful'
-						onClick={onImageClick}
-						loading='lazy'
-					/>
+				<div className='overflow-hidden w-full rounded-md bg-slate-100'>
+					<a href={buttonLink}>
+						<img
+							src={image}
+							alt={alt}
+							className='w-full'
+							onClick={onImageClick}
+							loading='lazy'
+						/>
+					</a>
 				</div>
 			) : null}
 
-			<div className='sm:max-w-[60%]'>
+			<div className='sm:max-w-[65%]'>
 				<h3 className='mb-2'>{title}</h3>
-				<p className='text-lg leading-tight'>{text}</p>
+				<p className='text-lg leading-tight text-slate-500 font-normal'>
+					{text}
+				</p>
 			</div>
 
 			<div className='flex gap-3'>
